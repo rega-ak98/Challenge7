@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/Sidebar/Sidebar";
+import Chart from "../../components/Chart/Chart"
 import fi_plus from "../../assets/images/icon/fi_plus.png";
 import fi_key from "../../assets/images/icon/fi_key.png";
 import fi_clock from "../../assets/images/icon/fi_clock.png";
@@ -34,9 +35,7 @@ const ListCar = () => {
     <>
       <div className="container-fluid p-0">
         <Navbar />
-
         <Sidebar />
-
         <section className="content-section ps-5 pe-4">
           <div className="row">
             <div className="col-lg-0" id="show-col-lg-0">
@@ -52,6 +51,7 @@ const ListCar = () => {
                     </Link>
                   </div>
                 </div>
+               
                 <div className="btn-group" aria-label="Basic example">
                   <button type="button" className="btn btn-outline-primary">
                     All
@@ -66,6 +66,7 @@ const ListCar = () => {
                     Large
                   </button>
                 </div>
+                <Chart />
                 <div className="row">
                   {listData.map((item) => {
                     return (

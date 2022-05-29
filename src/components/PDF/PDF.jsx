@@ -4,7 +4,7 @@ import "@react-pdf-viewer/core/lib/styles/index.css";
 import pdfFile from "../../assets/pdf/document.pdf";
 import { getFilePlugin } from "@react-pdf-viewer/get-file";
 
-const PdfViewer = () => {
+const PDF = () => {
   const [defaultPdfFile] = useState(pdfFile);
   const getFilePluginInstance = getFilePlugin();
   const { DownloadButton } = getFilePluginInstance;
@@ -17,7 +17,7 @@ const PdfViewer = () => {
             border: "1px solid rgba(0, 0, 0, 0.3)",
             display: "flex",
             flexDirection: "column",
-            height: "700px",
+            height: "1000px",
           }}
         >
           <div
@@ -48,4 +48,4 @@ const PdfViewer = () => {
   );
 };
 
-export default PdfViewer;
+export default PDF;

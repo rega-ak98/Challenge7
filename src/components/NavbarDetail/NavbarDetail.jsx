@@ -1,6 +1,5 @@
 import React from "react";
 import Logo from "../../assets/images/logo.png";
-import Dashboard from "../../pages/Dashboard/Dashboard";
 import "./NavbarDetail.css";
 
 function NavbarDetail() {
@@ -48,7 +47,7 @@ function NavbarDetail() {
                 </a>
               </li>
               <li className="nav-item">
-                <a href={<Dashboard />}
+                <a href={"/Dashboard"}
                   className="nav-link btn btn-sm btn-register"
                 >
                   Logout
